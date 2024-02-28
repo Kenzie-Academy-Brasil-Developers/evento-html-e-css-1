@@ -1,0 +1,30 @@
+.title{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.title.center{
+    text-align: center;
+}
+
+.text{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.text.center{
+    text-align: center;
+}
+
+.text.bold{
+    font-weight: 700;
+}
+
+.menu-item{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+/* 16px = 1rem sempre utilizar rem*/
