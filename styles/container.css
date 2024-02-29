@@ -8,3 +8,7 @@
 .container.sm{
     max-width: 1040px;
 }
+
+.container.xs{
+    max-width: 800px;
+}

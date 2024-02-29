@@ -3,6 +3,8 @@
 @import "./typography.css";
 @import "./background.css";
 @import "./container.css";
+@import "./header.css";
+@import "./footer.css";
 
 body{
     font-family: var(--font-primary);

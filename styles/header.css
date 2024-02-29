@@ -1,0 +1,18 @@
+.header{
+    padding: 15px 0;
+}
+
+.header .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}

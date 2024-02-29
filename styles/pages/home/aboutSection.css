@@ -1,0 +1,17 @@
+.about-section{
+    padding: 75px 0;
+}
+
+.about-section .flex-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+@media (max-width: 650px){
+    .about-section .flex-box{
+        gap: 40px;
+        flex-direction: column;
+    }    
+}

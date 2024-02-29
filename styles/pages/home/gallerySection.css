@@ -1,0 +1,20 @@
+.gallery-section{
+    padding: 75px 0;
+}
+
+.gallery-section h2{
+    margin-bottom: 40px;
+}
+
+.gallery-section ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 40px;
+}
+
+@media (max-width: 650px){
+    .gallery-section ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }    
+}

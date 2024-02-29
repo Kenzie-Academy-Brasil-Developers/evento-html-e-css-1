@@ -10,59 +10,69 @@
          rel="stylesheet"
       />
       <link rel="stylesheet" href="/styles/index.css" />
+      <link rel="stylesheet" href="/styles/pages/home/index.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <title>My Photos - Home</title>
    </head>
    <body>
-      <header class="background-black">
+      <header class="header background-black">
          <div class="container">
-            <img src="/assets/MyPhotos.png" alt="Logo MyPhotos branca" />
+            <div class="flex-box">
+               <img src="/assets/MyPhotos.png" alt="Logo MyPhotos branca" />
 
-            <nav>
-               <!-- não importa a ordem -->
-               <ul>
-                  <li>
-                     <a class="menu-item" href="index.html">home</a>
-                  </li>
-                  <li>
-                     <a class="menu-item" href="contato.html">contato</a>
-                  </li>
-               </ul>
-            </nav>
+               <nav>
+                  <!-- não importa a ordem -->
+                  <ul>
+                     <li>
+                        <a class="menu-item" href="index.html">home</a>
+                     </li>
+                     <li>
+                        <a class="menu-item" href="contato.html">contato</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
          </div>
       </header>
-      
+
       <main>
-         <section>
-            <ul>
-               <li>
-                  <img
-                     src="/assets/Foto1.jpg"
-                     alt="Gato malhado deitado de olhos fechados."
-                  />
-               </li>
-               <li>
-                  <img
-                     src="/assets/Foto2.jpg"
-                     alt="Camera fotográfica em um campo de girassois ao por do sol."
-                  />
-               </li>
-            </ul>
+         <section class="slider-section">
+            <div id="bannerSwiper" class="swiper">
+               <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                     <img
+                        src="/assets/Foto1.jpg"
+                        alt="Gato malhado deitado de olhos fechados."
+                     />
+                  </li>
+                  <li class="swiper-slide">
+                     <img
+                        src="/assets/Foto2.jpg"
+                        alt="Camera fotográfica em um campo de girassois ao por do sol."
+                     />
+                  </li>
+               </ul>
+               <div class="swiper-pagination"></div>
+            </div>
+            
          </section>
-         <section class="background-white">
+         <section class="about-section background-white">
             <div class="container sm">
-               <h2 class="title">Sobre</h2>
-               <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                  mauris nunc, imperdiet eu euismod vel, eleifend id sem. Vestibulum id
-                  blandit lorem, eget vehicula leo. Nulla scelerisque lectus vel nulla
-                  lobortis lacinia. Suspendisse potenti. Proin libero urna, mollis non
-                  commodo quis, ultricies in nibh. Etiam lobortis mauris id varius tempus.
-                  Praesent sit amet feugiat justo. Nunc sollicitudin dui vitae tincidunt
-                  tincidunt. Etiam vitae gravida orci.
-               </p>
+               <div class="flex-box">
+                  <h2 class="title">Sobre</h2>
+                  <p class="text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                     mauris nunc, imperdiet eu euismod vel, eleifend id sem. Vestibulum id
+                     blandit lorem, eget vehicula leo. Nulla scelerisque lectus vel nulla
+                     lobortis lacinia. Suspendisse potenti. Proin libero urna, mollis non
+                     commodo quis, ultricies in nibh. Etiam lobortis mauris id varius
+                     tempus. Praesent sit amet feugiat justo. Nunc sollicitudin dui vitae
+                     tincidunt tincidunt. Etiam vitae gravida orci.
+                  </p>
+               </div>
             </div>
          </section>
-         <section class="background-gray">
+         <section class="gallery-section background-gray">
             <div class="container sm">
                <h2 class="title">Galeria</h2>
                <ul>
@@ -86,11 +96,27 @@
          </section>
       </main>
 
-      <footer class="background-white">
+      <footer class="footer background-white">
          <div class="container">
-            <img src="/assets/MyPhotosPreto.png" alt="Logo MyPhotos preta" />
-            <p class="text bold">Todos os direitos reservados</p>
+            <div class="flex-box">
+               <img src="/assets/MyPhotosPreto.png" alt="Logo MyPhotos preta" />
+               <p class="text bold">Todos os direitos reservados</p>
+            </div>
          </div>
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+         var swiper = new Swiper("#bannerSwiper", {
+           pagination: {
+             el: ".swiper-pagination",
+           },
+           autoplay: {
+             delay: 3000,
+             disableOnInteraction: false,
+           }
+         });
+       </script>
    </body>
 </html>
